@@ -7,7 +7,7 @@
         ✎ @GodoFredoNinja
         ✈ Lima - Perú
 -->
-<html lang="{{@site.lang}}" data-theme="light">
+<html lang="{{@site.lang}}" data-theme="dark">
 <head>
     {{!-- Document Settings --}}
     <meta charset="utf-8" />
@@ -33,14 +33,7 @@
     {{ghost_head}}
 
     <script>
-        if (typeof(Storage) !== 'undefined') {
-            var selectTheme = localStorage.getItem('selected-theme');
-            if (selectTheme === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark')
-            } else if (selectTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        }
+        document.documentElement.setAttribute('data-theme', 'dark')
     </script>
 </head>
 <body class="{{block "special_body_class"}}">
