@@ -33,7 +33,7 @@ If for some reason I'm using a theme other than simply. then you can see the scr
 - Different templates for the Home Page
 - Different templates for publishing posts
 - Include Google Analytics Tracking use (Google Tag Manager)
-- Page for (Contact - Podcast - Tags - Authors - Newsletter)
+- Page for (Contact - Podcasts - Tags - Authors - Newsletter)
 - Previous and next Post
 - YouTube Subscribe Button in video post Format
 - Social Media
@@ -49,37 +49,38 @@ If for some reason I'm using a theme other than simply. then you can see the scr
 
 ## Table of Contents
 
-- [Web Browser Support for Simply](#web-browser-support-for-simply)
-- [Ghost Settings](#ghost-settings)
-- [Simply Settings](#simply-settings)
-  - [Social Media](#1-social-media)
-  - [YouTube Subscribe Button](#2-youtube-subscribe-button)
-  - [Instagram](#3-instagram)
-  - [Comments](#4-comments)
-  - [Search](#5-search)
-- [Home](#home-page)
-  - [Default](#home-page)
-  - [Featured](#home-page)
-  - [Medium](#home-page)
-  - [Sidebar](#home-page)
-  - [Grid](#home-page)
-- [Post](#post-format)
-  - [Default Post](##post-format)
-  - [Post Image](##post-format)
-  - [Post Video](##post-format)
-  - [Post Not Image](##post-format)
-- [Page](#page)
-  - [Contact](#contact-page)
-  - [Newsletter](#newsletter-page)
-- [Archive](#authors-page)
-  - [Authors](#authors-page)
-  - [Tags](#tags-page)
-  - [Podcast](#podcast-page)
-- [Theme Translation](#theme-translation)
-- [AMP](#amp)
-- [Change Theme Color](#change-theme-color)
-- [Tracking Google Tag Mananger](#tracking-google-tag-mananger)
-- [PrismJS code syntax](#prismjs-code-syntax)
+- [Simply free theme for Ghost](#simply-free-theme-for-ghost)
+  - [If you have a :heart: and value my work. :pray: Please, help me with a small donation on Paypal or [Here](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y7UB5Q8GVN3HN&source=url). It'll help motivate me to update the theme with many improvements](#if-you-have-a-heart-and-value-my-work-pray-please-help-me-with-a-small-donation-on-paypal-or-here-itll-help-motivate-me-to-update-the-theme-with-many-improvements)
+  - [Demo](#demo)
+  - [Featured](#featured)
+  - [Table of Contents](#table-of-contents)
+  - [Web Browser Support for Simply](#web-browser-support-for-simply)
+  - [Ghost Settings](#ghost-settings)
+  - [Simply Settings](#simply-settings)
+    - [1. Social Media](#1-social-media)
+    - [2. YouTube Subscribe Button](#2-youtube-subscribe-button)
+    - [3. Instagram](#3-instagram)
+    - [4. Comments](#4-comments)
+    - [5. Search](#5-search)
+  - [Home Page](#home-page)
+  - [Post Format](#post-format)
+  - [Page](#page)
+    - [Tags Page](#tags-page)
+  - [Authors Page](#authors-page)
+  - [Contact Page](#contact-page)
+  - [Newsletter Page](#newsletter-page)
+  - [Podcasts Page](#podcasts-page)
+  - [Theme Translation](#theme-translation)
+  - [AMP](#amp)
+  - [Change Theme Color](#change-theme-color)
+  - [Tracking Google Tag Mananger](#tracking-google-tag-mananger)
+    - [Settings Google Tag Mananger](#settings-google-tag-mananger)
+      - [First we'll create triggers](#first-well-create-triggers)
+      - [Second we'll create Tag](#second-well-create-tag)
+      - [Third Insert code](#third-insert-code)
+    - [PrismJS code syntax](#prismjs-code-syntax)
+    - [Credits](#credits)
+  - [Copyright & License](#copyright--license)
 
 ## Web Browser Support for Simply
 
@@ -525,24 +526,24 @@ Example: `<form action="https://ninja.us10.list-manage.com/subscribe/post?u=5c52
 
 [![ghost nesletter](./documentation/newsletter.jpg)](https://www.behance.net/gallery/89147477/Simply-Newsletter-Page)
 
-## Podcast Page
+## Podcasts Page
 
 - Create a new page
 - Choose your favorite title
-- Use the url `podcast`
-- In your articles use the internal tags `#podcast`
+- Use the url `podcasts`
+- In your articles use the internal tags `#podcasts`
 - First back up your routes in your ghost settings `Labs -> Routes -> Download current routes.yml`
 - Re-download the Route and edit `routes.yml` line `routes`
 
 ```yaml
 routes:
-  /podcast/:
+  /podcasts/:
     controller: channel
-    filter: tag:[hash-podcast]
+    filter: tag:[hash-podcasts]
     data:
-      post: page.podcast
+      post: page.podcasts
     limit: 10
-    template: godo-podcast
+    template: godo-podcasts
 ```
 
 - In an `HTML` block in your ghost editor add this code for your content.
