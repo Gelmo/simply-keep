@@ -5,28 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>{{t "Page not found"}}</title>
 
-       {{!--  Font -> Libre Franklin=400,600,700 --}}
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    {{!--  Font -> Libre Baskerville=400,700 --}}
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    {{!--  Font Source sans Pro && roboto mono --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}" />
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 
-    <script>
-        if (typeof(Storage) !== 'undefined') {
-            if (localStorage.getItem('selected-theme') === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark')
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            }
-        }
-    </script>
+   
 </head>
 <body class="u-bgColorGrayLight">
-
     {{!-- Header Content --}}
     {{>"header"}}
 
