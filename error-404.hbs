@@ -13,13 +13,24 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 
+    <script>
+        if (typeof(Storage) !== 'undefined') {
+            if (localStorage.getItem('selected-theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+    </script>
 </head>
 <body class="u-bgColorGrayLight">
+
     {{!-- Header Content --}}
     {{>"header"}}
 
     <main class="u-paddingBottom30 u-paddingTop30">
         {{!-- Content Emojis --}}
+        test
         <section class="errorPage u-lineHeight1">
             <div class="errorPage-wrap u-marginAuto u-maxWidth1000 u-textAlignCenter u-textMuted">
                 <div id="emoji" class="errorPage-emoji" style="font-size:100px">(>_<)</div>
