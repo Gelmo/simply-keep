@@ -13,15 +13,7 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 
-    <script>
-        if (typeof(Storage) !== 'undefined') {
-            if (localStorage.getItem('selected-theme') === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark')
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        }
-    </script>
+   
 </head>
 <body class="u-bgColorGrayLight">
     {{!-- Header Content --}}
@@ -65,7 +57,7 @@
     {{> "icons/icons-symbol-defs"}}
 
     <script>
-        var emoji = ['(·.·)', '(>_<)', '(^-^*)', '(˚Δ˚)', '(·_·)', '(;-;)']
+        var emoji = ['(·.·)', '(>_<)', '(^-^*)', '(˚Δ˚)', '(·_·)', '(;-;)']
         var emojiRandom = emoji[Math.floor(Math.random()*emoji.length)];
         document.getElementById('emoji').innerHTML = emojiRandom;
     </script>
