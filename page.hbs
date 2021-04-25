@@ -1,10 +1,10 @@
 {{!< default}}
 
-{{#contentFor "special_body_class"}}is-article{{/contentFor}}
+
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-
+{{#contentFor "special_body_class"}}is-article page_{{title}}{{/contentFor}}
 <article class="post u-marginBottom40 u-relative">
 
     <header class="post-header u-container u-maxWidth740 u-paddingTop30">
