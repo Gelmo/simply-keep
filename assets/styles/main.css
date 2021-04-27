@@ -3433,3 +3433,7 @@ html[data-theme=dark] .search-message, html[data-theme=dark] hr {
 .is-podcast .feed-entry-wrap {
     padding: calc(1vw + 10px) calc(2.6vw + 10px);
 }
+.post-tags {
+  margin-top:30px;
+  margin-bottom:20px;
+}
