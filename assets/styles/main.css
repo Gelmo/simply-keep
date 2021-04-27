@@ -3238,7 +3238,6 @@ html[data-theme=dark] .search-message, html[data-theme=dark] hr {
 .main{
   z-Index:3;
 }
-
 .page_Livestream  .post-share {
     display: none;
 }
@@ -3322,4 +3321,115 @@ html[data-theme=dark] .search-message, html[data-theme=dark] hr {
   .page_Merch .story-right{ 
         display:none;
   }
+}
+
+
+.is-podcast .spc-h-inner {
+    padding-bottom: 10px;
+}
+
+.is-podcast  .spc-h-inner {
+    padding: calc(3vw + 55px) 4vw 30px;
+    font-size: 1.5rem;
+}  
+
+.is-podcast .spc-h-t{
+	  display:none;
+}
+
+.is-podcast .spc-header:before {
+     background-image: none!important;
+}
+.is-podcast .spc-header:after {
+ 
+    background-image: none!important;
+}
+.is-podcast .u-bgDark { 
+    background-image:none!important;
+    background-color:transparent!important;
+}    
+    
+.is-podcast .tab {
+    overflow: hidden;
+    border: 1px solid #340002;
+    background-color: rgba(0,0,0,0.85);
+    margin:auto;
+    width:100%;
+	  border-radius:5px;
+	  box-shadow:0px 0px 20px black;
+}
+
+.is-podcast .tablinks {
+	  display:inline-block;
+	  width:30%;
+    cursor:pointer;
+    opacity:50%;
+	  padding:2.5%;
+}
+.is-podcast .tablinks img {
+    border: 3px solid black;
+		border-radius:10px;
+}
+
+.is-podcast .active,is-podcast .tablinks:hover { 
+    opacity:100%;
+}
+.is-podcast .tablinks:hover img { 
+     border: 3px solid #340002;
+}
+
+.is-podcast .tabcontent,.is-podcast article {
+
+	  padding: 12px 12px;
+	  margin-top:15px;
+	  border-top: none;
+	  width:100%;
+  	border: 1px solid #340002;
+	  border-radius:5px;
+	  box-shadow:0px 0px 20px black;
+	  background-color: rgba(0,0,0,0.85);
+}
+
+.is-podcast .tabcontent iframe{	
+	  border-radius:5px;	
+	  width: 100%; 
+	  height: 515px;
+	  border: 1px solid black;
+}
+
+.is-podcast #tabwrap {	
+	  width:100%;
+	  position:relative;
+}
+.is-podcast #tabspacer{
+	  height:515px;
+	  visibility:hidden;
+	  position:absolute;
+}
+        
+.is-podcast .site-wrapper::before {
+
+    content:"";
+    position: fixed;
+    display:block;
+    height: 200px;
+    width:100%;
+    top: 50px;
+    background-image: linear-gradient(0deg,transparent,black);
+}
+
+.is-podcast .site-wrapper::after {
+    content:"";
+    position: fixed;
+    display:block;
+    height: 200px;
+    width:100%;
+    bottom: 0;
+    background-image: linear-gradient(180deg,transparent,black);
+}   
+.is-podcast .u-marginBottom30 {
+   margin-bottom: 0px; 
+}
+.is-podcast .feed-entry-wrap {
+    padding: calc(1vw + 10px) calc(2.6vw + 10px);
 }
