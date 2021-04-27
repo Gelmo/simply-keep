@@ -3238,3 +3238,45 @@ html[data-theme=dark] .search-message, html[data-theme=dark] hr {
 .main{
   z-Index:3;
 }
+
+.page_Livestream  .post-share {
+    display: none;
+}
+.page_Livestream  .post-body > :first-child {
+    margin: 0;
+}
+.page_Livestream  .post-header {
+    visibility: hidden;
+}
+.page_Livestream  .u-paddingTop30 {
+    display: none;
+}
+.page_Livestream .post-body {
+    padding: 0.9vw;
+      border-radius:15px;
+}
+
+.page_Livestream .streamiframe {
+    max-width: 80%;
+}
+.page_Livestream .u-maxWidth740 {
+    max-width: 80%;
+}
+.page_Livestream .video-responsive {
+    border: 1px solid #340002;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px black;
+}
+.page_Livestream .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.page_Livestream .close:hover, .page_Livestream .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
