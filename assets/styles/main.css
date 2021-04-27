@@ -693,7 +693,7 @@ svg {
   background-color: #f3f5f9;
 }
 .u-bgDark {
-  background-color: #110f16;
+  background-color: #00000000;
 }
 .u-bgheader {
   background-color: #fff;
@@ -2894,13 +2894,13 @@ html[data-theme="dark"] .cr {
   background-color: #191919;
 }
 html[data-theme="dark"] .u-borderLighter {
-  border-color: #1b1a1a;
+  border-color: #00000000;
 }
 html[data-theme="dark"] .button--tags {
   color: hsla(0, 0%, 100%, 0.9);
 }
 html[data-theme="dark"] .u-bgColorGrayLight {
-  background-color: #141414;
+  background-color: #00000000;
 }
 html[data-theme="dark"] .back-to-top {
   color: #6c757d;
@@ -2949,7 +2949,7 @@ html[data-theme="dark"] .spc-c,
 html[data-theme="dark"] .topic-item,
 html[data-theme="dark"] .u-card,
 html[data-theme="dark"] table tr:nth-child(2n) {
-  background-color: #181818;
+  background-color: #00000000;
 }
 @media only screen and (max-width: 1000px) {
   blockquote {
@@ -3395,7 +3395,7 @@ hr {
 .story,
 .story-cover {
   margin-bottom: 50px;
-  background: rgba(1, 1, 1, 0.9);
+  background: rgba(1, 1, 1, 0.85);
   padding: 10px;
   border: 1px solid #320002;
   box-shadow: 0 0 10px black;
