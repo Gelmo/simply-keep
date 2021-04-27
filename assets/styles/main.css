@@ -1909,9 +1909,9 @@ body.has-search .search{
 .godo-f-story{
     padding:8% 0
 }
-.godo-f-story-excerpt;
-text-shadow:0px 2px 4px rgba(0,0,0,0.7){
-    max-height:2.8em
+.godo-f-story-excerpt{
+    text-shadow:0px 2px 4px rgba(0,0,0,0.7);
+    max-height:2.8em;
 }
 .godo-f-story-date{
     color:hsla(0,0%,100%,.7);
