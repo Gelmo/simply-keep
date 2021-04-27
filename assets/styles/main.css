@@ -3281,6 +3281,45 @@ html[data-theme=dark] .search-message, html[data-theme=dark] hr {
 
 
 .page_Services .kg-image-card{
-margin-top:-7%;
+    margin-top:-7%;
 }
-
+.page_Merch .story, .story-cover {
+    margin-bottom: 0px;   
+} 
+.page_Merch .post {
+    padding: 0px 2vw;
+}
+.page_Merch .story-body {
+    padding: 0 1rem 0 1rem!important;
+        
+}
+.page_Merch .post-body a:not(.kg-bookmark-container):not(.button) {
+    border-bottom-color: transparent!important;
+}
+.page_Merch .story-excerpt{
+    text-align:center;
+} 
+@media only screen and (min-width: 650px) { 
+  .page_Merch .story-image {
+        height: auto;
+        -webkit-box-flex: 1;
+        flex: 1 1 auto;
+        min-height: 380px;
+  }
+  .page_Merch .ss1 .story {
+        display: -webkit-box;
+        display: flex;
+  } 
+  .page_Merch .ss1 .story-body {
+        padding: 0 0 0 2rem;
+        flex-basis: 34.33333%;
+        -webkit-box-pack: center;
+        justify-content: center;
+  } 
+  .page_Merch .story-left{ 
+        display:flex;
+  }
+  .page_Merch .story-right{ 
+        display:none;
+  }
+}
