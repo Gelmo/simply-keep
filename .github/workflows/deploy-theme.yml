@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - name: Update INQUIRYHOOKURL
+        run: perl -pi -e 's/INQUIRYHOOKURL/"$ENV{INQUIRYHOOK}"/' assets/scripts/itk.js
+        env:
+          INQUIRYHOOK: ${{ secrets.INQUIRYHOOK }}
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1.4.0
         with:
