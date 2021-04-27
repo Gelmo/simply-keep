@@ -3427,7 +3427,7 @@ hr {
 }
 
 .subscribeBanner {
-  z-index: 19;
+  z-index: 18;
 }
 
 html[data-theme="dark"] .subscribeBanner {
