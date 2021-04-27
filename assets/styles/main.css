@@ -3108,3 +3108,133 @@ html[data-theme=dark] .author-card,html[data-theme=dark] .godo-ne,html[data-them
         order:1
     }
 }
+
+/*!
+ * additions by naeb
+ */
+
+.post-body, .post-header ,.post-footer {
+    background-color: rgba(1,1,1,0.9);
+    margin-bottom: 13px;
+    margin-top: 23px;
+    border: 1px solid #320004;
+    border: 1px solid #320002;
+    box-shadow: 0 0 10px black;
+}
+.post-header{
+    display:none;
+}
+
+.u-marginTop30 {
+    margin-top: 0px;
+}
+
+hr {
+  margin :0px 0px;
+}
+
+.post-image {
+     margin-top: 0px; 
+}
+    
+.prev-next {
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.post {
+    margin-bottom:0px;
+}
+    
+.article {
+    width:80%;
+    margin:auto;
+    background: rgba(1,1,1,0.9);
+}   
+
+.story,.story-cover {
+    margin-bottom: 50px;
+    background: rgba(1,1,1,0.9);
+    padding: 10px;
+    border: 1px solid #320002;
+    box-shadow: 0 0 10px black;
+}
+
+.site-wrapper{    
+    background-image: url(/content/images/2021/04/ITK_4K_BACKGROUND-1.png);
+    background-attachment: fixed;
+}
+    
+.site-wrapper::before {
+    content:"";
+    position: fixed;
+    display:block;
+    height: 200px;
+    width:100%;
+    top: 50px;
+    background-image: linear-gradient(0deg,transparent,black);
+}
+
+.site-wrapper::after {
+    content:"";
+    position: fixed;
+    display:block;
+    height: 200px;
+    width:100%;
+    bottom: 0;
+    background-image: linear-gradient(180deg,transparent,black);
+}
+
+.subscribeBanner {
+    z-index:19;
+}
+    
+html[data-theme=dark] .subscribeBanner {
+    background-color: #272626;
+    border: 1px solid red;
+    border-left: none;
+    border-right: none;
+}  
+
+.godo-f-story {
+    background: #000000aa;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+
+body.is-transparent:not(.has-menu) .header {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+body.has-cover .header {
+    -webkit-transition: none;
+    transition: none;
+}
+
+html[data-theme=dark] .search-message, html[data-theme=dark] hr {
+    border-top-color: #320004;
+}
+
+.u-menu-color a.nav-current,  .u-menu-color a.nav-current:hover {
+    text-shadow: none!important;
+    border: 1px solid transparent!important;
+      text-shadow: 0 0 10px white;
+    color: red!important;
+}
+.u-menu-color a:hover {
+    color: white!important;
+    text-shadow: 0 0 10px red;
+    border-bottom: 1px solid red;
+}
+
+.mainMenu ul li a {
+    display: block;
+    border: 1px solid transparent;
+}
+
+.story-left{ 
+    display:none;
+}
+.main{
+  z-Index:3;
+}
