@@ -12,7 +12,7 @@ function sendForm(form) {
         	error += "Message ";
         }
         if(document.forms[0][2].value.length >=2000){
-        	error += "Message ist too long (max. 2000 chars)";
+        	error += "Message is too long (max. 2000 chars)";
         }
 		    if(error==""){
 			    var request = new XMLHttpRequest();
@@ -44,7 +44,7 @@ function sendForm(form) {
 				  alert("Spam Protection!\nTry again in an hour.");
 			  }
 			  request.onerror = function () {
-				  alert("Message could not be send. \nPlease try later.");
+				  alert("Message could not be sent. \nPlease try later.");
 			  };
 			
 			  request.onreadystatechange = function () {
@@ -56,13 +56,13 @@ function sendForm(form) {
 						  document.getElementById("inqform").style.display="none";
 						  document.getElementById("formresponse").style.display = "block";
 					  } else {
-					    alert("Message could not be send. \nPlease try later.");
+					    alert("Message could not be sent. \nPlease try later.");
 					  }
 				  }
 			  };
 			
       } else {
-			  alert("Message could not be send. \nPlease check your input values :\n"+error);
+			  alert("Message could not be sent. \nPlease check your input values :\n"+error);
       }
 }
 
