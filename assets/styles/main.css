@@ -3533,6 +3533,9 @@ html[data-theme="dark"] hr {
 .page_Merch .post {
   padding: 0px 2vw;
 }
+.page_Merch .story-excerpt a {
+  font-family: Libre Baskerville, serif;
+}
 .page_Merch .story-body {
   padding: 0 1rem 0 1rem !important;
 }
