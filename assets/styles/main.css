@@ -2895,7 +2895,9 @@ html[data-theme="dark"] .medium-zoom-overlay {
   background: rgba(0, 0, 0, 0.5) !important;
 }
 html[data-theme="dark"] .cr {
-  background-color: #191919;
+  background-color: #000000dd;
+  border: 1px solid #320004;
+  box-shadow: 0px 0px 10px black;
 }
 html[data-theme="dark"] .u-borderLighter {
   border-color: #00000000;
